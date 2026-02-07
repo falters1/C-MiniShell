@@ -1,13 +1,6 @@
 #include "dynamicstring.h"
 #include <stdint.h>
-// NOTE:
-//      You are not allowed to include <string.h> in this file.
 
-//  #include <stdio.h>
-// You should not include output in your final version
-// from these functions. It may be useful while debugging
-// however to print out messages.
-// Remember --your GDB however, it's a good idea to use a debugger!
 
 dynamicstring_t* DynamicString_Create(const char* input){
 	if (input == NULL){

@@ -59,9 +59,8 @@ void sigtstp_handler(int sig) {
 void sigint_handler(int sig);
 
 int main(int argc, char** argv){
-  // Please leave in this line as the first statement in your program.
-  alarm(120); // This will terminate your shell after 120 seconds,
-              // and is useful in the case that you accidently create a 'fork bomb'
+ 
+  alarm(120); //useful in the case that you accidently create a 'fork bomb'
   signal(SIGCHLD, sigchild_handler);
   signal(SIGTSTP, sigtstp_handler);  
   signal(SIGINT, sigint_handler);     
@@ -104,8 +103,7 @@ int main(int argc, char** argv){
 
         shell_exec(tokens);
 
-        // Let's see what happens when comparing a string.
-        // Think about this behavior.
+
         /*if(strcmp(line,"help")==0){
             printf("You typed in help\n");
         }

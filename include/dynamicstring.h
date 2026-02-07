@@ -1,24 +1,8 @@
 #ifndef DYNAMICSTRING_H
 #define DYNAMICSTRING_H
-// NOTE:
-//      You are not allowed to include <string.h> in this file.
-//      The reason is because the 'dynamicstring' type that you are
-//      creating, should serve as a replacement for the 'string' functions
-//      without any dependeny on the C library.
-//      (Yes...this means you should write (or reuse) functions for computing
-//      string length by iterating through the characters if you need that 
-//      functionality.)
-// NOTE:
-//      You are allowed to use malloc,calloc,realloc,free, etc.
-// NOTE:
-//      You are allowed to call DynamicString_* functions within other DynamicString_* functions however.
-// NOTE: You are allowed to write additional helper functions, but you should
-//       not otherwise modify the signature of the provided functions in this
-//       header.
 
-#include <stdlib.h> // For malloc/free/realloc/calloc/NULL/etc
-#include <stddef.h> // Data type for size_t
-					// size_t is typically a typedef for an 'unsigned long'
+#include <stdlib.h> 
+#include <stddef.h> 
 
 typedef struct dynamicstring{
 	char* buf;  // 'buf' short for 'buffer'

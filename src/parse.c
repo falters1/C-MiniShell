@@ -1,19 +1,8 @@
-// Implement a lexer parser in this file that splits text into individual tokens.
-// You may reuse any functions you write for your main shell.
-// 
-// The point of this exercise is to get something small working first!
-// You may choose to reuse this portion of your code later on.
-//
+// lexer parser that splits text into individual tokens.
 #include <string.h>
 #include "dynamicstring.h"
 #include <ctype.h>
 #include <stdio.h>
-
-// Implement your function parse here
-// Parse should accept 1 string as an argument.
-// Think carefully about the return type
-// --what would be a useful type to store a
-// --collection of tokens?
 
 
 
